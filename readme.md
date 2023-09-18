@@ -3,5 +3,5 @@ This automation script tool does recon very fast and fulfills the recon basic de
 
 ## Tools Used
 1. Subfinder-Assetfinder
-2. Httpx
-3. Waybackurls
+2. httpx
+3. gau
