@@ -10,15 +10,15 @@ echo "Bullet Train Subfinder"
 echo " "
 subfinder -d $DOMAIN | tee $DIRECTORY/subfinder.txt
 echo "subfinder done"
-echo " " 
+echo " "
 
 #findomain
 echo " "
 echo "Bullet Train Findomain"
 echo " "
-findomain -t $DOMAIN | tee $DIRECTORY/findomain.txt
+findomain -t $DOMAIN -u $DIRECTORY/findomain.txt
 echo "findomain done"
-echo " " 
+echo " "
 
 #arranging files
 echo " "
@@ -37,10 +37,10 @@ echo " "
 cat $DIRECTORY/live_subdomains.txt | httpx -title -status-code -fr -o $DIRECTORY/httpx_title_statuscode.txt
 echo " "
 
-# waybackurls
+# gau
 echo " "
 echo "waybackurls station train"
 echo " "
-cat $DIRECTORY/live_subdomains.txt | waybackurls | tee $DIRECTORY/urls.txt
-echo "wayback station reached"
+cat $DIRECTORY/live_subdomains.txt | gau | tee $DIRECTORY/urls.txt
+echo "gau station reached"
 echo " "
